@@ -682,6 +682,10 @@ html {
   height: 100vh;
 }
 
+.max-h-\[50px\] {
+  max-height: 50px;
+}
+
 .min-h-\[50px\] {
   min-height: 50px;
 }
