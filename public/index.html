@@ -5,27 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <title>Ngekos App</title>
 </head>
 <body>
     <div id="main" class="relative flex flex-col w-full max-w-[640px] min-h-screen mx-auto bg-white gap-5">
-        
-        <div class="relative">
-            <div class="absolute top-0 left-0 w-full h-[239px] bg-gradient-to-b from-[#F2F9E6] to-[#D2EDE4] rounded-b-[50px]">
-            </div>
+        <div class="absolute top-0 left-0 w-full h-[239px] bg-gradient-to-b from-[#F2F9E6] to-[#D2EDE4] rounded-b-[50px]">
         </div>
-        
+
+        <!-- top bar -->
+        <div id="topbar" class="relative flex items-center mt-[30px] w-full overflow-hidden mx-auto px-5">
+            <a href="#">
+                <img src="assets/images/icon/back-arrow.svg" alt="icon">
+            </a>
+            <h3 class="font-semibold absolute left-1/2 transform -translate-x-1/2 text-center">Choose Available Room</h3>
+        </div>
+
         <div class="relative flex flex-col gap-5 mb-[100px]">
-            <!-- top bar -->
-            <div id="topbar" class="relative flex items-center mt-[30px] w-full overflow-hidden mx-auto px-5">
-                <a href="#">
-                    <img src="assets/images/icon/back-arrow.svg" alt="icon">
-                </a>
-                <h3 class="font-semibold absolute left-1/2 transform -translate-x-1/2 text-center">Choose Available Room</h3>
-            </div>
-            
-            
             <!-- hotel -->
             <section id="hotel-place" class="flex flex-col px-5 overflow-hidden">
                 <a href="#">
@@ -58,7 +55,7 @@
 
                     <!-- Card 1 - Deluxe -->
                     <a href="#">
-                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border-2 transition-all duration-300">
+                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
                             <div class="flex min-w-[148px] h-[188px] overflow-hidden">
                                 <img src="assets/images/room/deluxe.png" class="w-full h-full object-contain" alt="thumbnail">
                             </div>
@@ -86,7 +83,7 @@
 
                     <!-- Card 2 - Executive -->
                     <a href="#">
-                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border-2 transition-all duration-300">
+                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
                             <div class="flex min-w-[148px] h-[188px] overflow-hidden">
                                 <img src="assets/images/room/executive.png" class="w-full h-full object-contain" alt="thumbnail">
                             </div>
@@ -114,7 +111,7 @@
 
                     <!-- Card 3 - President -->
                     <a href="#">
-                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border-2 transition-all duration-300">
+                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
                             <div class="flex min-w-[148px] h-[188px] overflow-hidden">
                                 <img src="assets/images/room/president.png" class="w-full h-full object-contain" alt="thumbnail">
                             </div>
@@ -143,11 +140,10 @@
                 </div>
             </section>
         </div>
-        
-        <div id="continue-button" class="fixed bottom-0 w-full max-w-[640px] mb-5 px-5 mx-auto">
-            <button class="text-center rounded-full px-5 py-[14px] bg-orange text-white shadow-md w-full">Continue Booking</button>
-        </div>
 
+        <div id="continue-button" class="fixed bottom-0 w-full max-w-[640px] mb-5 px-5 mx-auto">
+            <button class="text-center font-bold rounded-full px-5 py-[14px] bg-orange text-white shadow-md w-full">Continue Booking</button>
+        </div>
     </div>
 </body>
 </html>

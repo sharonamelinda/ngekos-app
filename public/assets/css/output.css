@@ -905,6 +905,11 @@ html {
   background-color: rgb(241 242 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#dae1e9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 225 233 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
