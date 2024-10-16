@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/output.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="output.css">
 
     <title>Ngekos - Rooms Available</title>
 </head>
@@ -31,24 +30,24 @@
                             <div class="flex flex-col gap-3">
                                 <div class="flex items-center gap-[6px]">
                                     <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                    <p class="text-sm text-abu">Singapore City</p>
+                                    <p class="text-sm text-ngekos-gray">Singapore City</p>
                                 </div>
                                 <div class="flex items-center gap-[6px]">
                                     <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                    <p class="text-sm text-abu">In House</p>
+                                    <p class="text-sm text-ngekos-gray">In House</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
             </section>
-            <section id="available-rooms" class="flex flex-col gap-4 overflow-hidden px-5">
-                <form id="rooms-form" action="#" method="#">
+            <form id="rooms-form" action="#" method="#">
+                <section id="available-rooms" class="flex flex-col gap-4 overflow-hidden px-5">
                     <h3 class="font-bold">Available Rooms</h3>
                     <div class="flex flex-col gap-4">
-                        <label>
-                            <input type="radio" name="room" value="deluxe" class="hidden">
-                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
+                        <label class="block">
+                            <input type="radio" name="room" value="deluxe" class="hidden peer">
+                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-ngekos-green hover:border transition-all duration-300 peer-checked:border-ngekos-green">
                                 <div class="flex min-w-[148px] h-[188px] overflow-hidden">
                                     <img src="assets/images/room/deluxe.png" class="w-full h-full object-contain" alt="thumbnail">
                                 </div>
@@ -58,25 +57,25 @@
                                     <div class="flex flex-col gap-3">
                                         <div class="flex items-center gap-[6px]">
                                             <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                            <p class="text-sm text-abu">1 People</p>
+                                            <p class="text-sm text-ngekos-gray">1 People</p>
                                         </div>
                                         <div class="flex items-center gap-[6px]">
                                             <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                            <p class="text-sm text-abu">184 sqft flat</p>
+                                            <p class="text-sm text-ngekos-gray">184 sqft flat</p>
                                         </div>
                                     </div>
                                     <hr class="bg-[#F1F2F6]">
                                     <div class="flex items-center">
-                                        <p class="text-orange font-semibold">Rp 793.444</p>
-                                        <p class="text-abu text-sm">/bulan</p>
+                                        <p class="text-ngekos-orange font-semibold">Rp 793.444</p>
+                                        <p class="text-ngekos-gray text-sm">/bulan</p>
                                     </div>
                                 </div>
                             </div>
                         </label>
-                        <label>
-                            <input type="radio" name="room" value="executive" class="hidden">
-                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
-                                <div class="flex min-w-[148px] h-[188px] overflow-hidden has-[:checked]:border-hijau">
+                        <label class="block">
+                            <input type="radio" name="room" value="executive" class="hidden peer">
+                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-ngekos-green hover:border transition-all duration-300 peer-checked:border-ngekos-green">
+                                <div class="flex min-w-[148px] h-[188px] overflow-hidden">
                                     <img src="assets/images/room/executive.png" class="w-full h-full object-contain" alt="thumbnail">
                                 </div>
                                 <div class="flex flex-col gap-4 w-full">
@@ -85,24 +84,24 @@
                                     <div class="flex flex-col gap-3">
                                         <div class="flex items-center gap-[6px]">
                                             <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                            <p class="text-sm text-abu">2 People</p>
+                                            <p class="text-sm text-ngekos-gray">2 People</p>
                                         </div>
                                         <div class="flex items-center gap-[6px]">
                                             <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                            <p class="text-sm text-abu">221 sqft flat</p>
+                                            <p class="text-sm text-ngekos-gray">221 sqft flat</p>
                                         </div>
                                     </div>
                                     <hr class="bg-[#F1F2F6]">
                                     <div class="flex items-center">
-                                        <p class="text-orange font-semibold">Rp 2.793.444</p>
-                                        <p class="text-abu text-sm">/bulan</p>
+                                        <p class="text-ngekos-orange font-semibold">Rp 2.793.444</p>
+                                        <p class="text-ngekos-gray text-sm">/bulan</p>
                                     </div>
                                 </div>
                             </div>
                         </label>
-                        <label>
-                            <input type="radio" name="room" value="president" class="hidden">
-                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
+                        <label class="block">
+                            <input type="radio" name="room" value="president" class="hidden peer">
+                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-ngekos-green hover:border transition-all duration-300 peer-checked:border-ngekos-green">
                                 <div class="flex min-w-[148px] h-[188px] overflow-hidden">
                                     <img src="assets/images/room/president.png" class="w-full h-full object-contain" alt="thumbnail">
                                 </div>
@@ -112,27 +111,27 @@
                                     <div class="flex flex-col gap-3">
                                         <div class="flex items-center gap-[6px]">
                                             <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                            <p class="text-sm text-abu">4 People</p>
+                                            <p class="text-sm text-ngekos-gray">4 People</p>
                                         </div>
                                         <div class="flex items-center gap-[6px]">
                                             <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                            <p class="text-sm text-abu">555 sqft flat</p>
+                                            <p class="text-sm text-ngekos-gray">555 sqft flat</p>
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="flex items-center">
-                                        <p class="text-orange font-semibold">Rp 4.793.444</p>
-                                        <p class="text-abu text-sm">/bulan</p>
+                                        <p class="text-ngekos-orange font-semibold">Rp 4.793.444</p>
+                                        <p class="text-ngekos-gray text-sm">/bulan</p>
                                     </div>
                                 </div>
                             </div>
                         </label>
                     </div>
-                    <div id="continue-button" class="fixed bottom-0 w-full max-w-[640px] mb-5 px-5 mx-auto">
-                        <button class="text-center font-bold rounded-full px-5 py-[14px] bg-orange text-white shadow-md w-full">Continue Booking</button>
-                    </div>
-                </form>
-            </section>
+                </section>
+                <div id="continue-button" class="fixed bottom-0 left-0 right-0 w-full mb-[30px] px-5 max-w-[640px] mx-auto">
+                    <button class="text-center font-bold rounded-full py-[14px] bg-ngekos-orange text-white shadow-md w-full">Continue Booking</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js,css}", "./src/**/*.{html,js,css}"],
+  content: ["./src/**/*.{html,js,css}"],
   theme: {
     extend: {
       colors: {
-        abu: "#5E6F76",
-        orange: "#FF801A",
-        hijau: "#91BF77",
+        'ngekos-gray': "#5E6F76",
+        'ngekos-orange': "#FF801A",
+        'ngekos-green': "#91BF77",
       },
     },
   },
