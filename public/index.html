@@ -48,96 +48,103 @@
             </section>
 
             <!-- Rooms -->
-            <section id="available-rooms" class="flex flex-col gap-4 overflow-hidden px-5">
-                <h3 class="font-bold">Available Rooms</h3>
-                <div class="flex flex-col gap-4">
+            <form id="available-rooms-form">
+                <section id="available-rooms" class="flex flex-col gap-4 overflow-hidden px-5">
+                    <h3 class="font-bold">Available Rooms</h3>
+                    <div class="flex flex-col gap-4">
 
-                    <!-- Card 1 - Deluxe -->
-                    <a href="#">
-                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
-                            <div class="flex min-w-[148px] h-[188px] overflow-hidden">
-                                <img src="assets/images/room/deluxe.png" class="w-full h-full object-contain" alt="thumbnail">
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h3 class="font-semibold text-lg line-clamp-2">Deluxe Room</h3>
-                                <hr class="bg-[#F1F2F6]">
-                                <div class="flex flex-col gap-3">
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                        <p class="text-sm text-abu">1 People</p>
+                        <!-- Card 1 - Deluxe -->
+                        <label>
+                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
+                                <div class="flex min-w-[148px] h-[188px] overflow-hidden">
+                                    <img src="assets/images/room/deluxe.png" class="w-full h-full object-contain" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <h3 class="font-semibold text-lg line-clamp-2">Deluxe Room</h3>
+                                    <hr class="bg-[#F1F2F6]">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
+                                            <p class="text-sm text-abu">1 People</p>
+                                        </div>
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
+                                            <p class="text-sm text-abu">184 sqft flat</p>
+                                        </div>
                                     </div>
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                        <p class="text-sm text-abu">184 sqft flat</p>
+                                    <hr class="bg-[#F1F2F6]">
+                                    <div class="flex items-center">
+                                        <p class="text-orange font-semibold">Rp 793.444</p>
+                                        <p class="text-abu text-sm">/bulan</p>
                                     </div>
                                 </div>
-                                <hr class="bg-[#F1F2F6]">
-                                <div class="flex items-center">
-                                    <p class="text-orange font-semibold">Rp 793.444</p>
-                                    <p class="text-abu text-sm">/bulan</p>
-                                </div>
                             </div>
-                        </div>
-                    </a>
+                            <input type="radio" name="room" value="deluxe" class="hidden">
+                        </label>
 
-                    <!-- Card 2 - Executive -->
-                    <a href="#">
-                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
-                            <div class="flex min-w-[148px] h-[188px] overflow-hidden">
-                                <img src="assets/images/room/executive.png" class="w-full h-full object-contain" alt="thumbnail">
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h3 class="font-semibold text-lg line-clamp-2">Executive Room</h3>
-                                <hr class="bg-[#F1F2F6]">
-                                <div class="flex flex-col gap-3">
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                        <p class="text-sm text-abu">2 People</p>
+                        <!-- Card 2 - Executive -->
+                        <label>
+                            <input type="radio" name="room" value="executive" class="hidden">
+                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
+                                <div class="flex min-w-[148px] h-[188px] overflow-hidden has-[:checked]:border-hijau">
+                                    <img src="assets/images/room/executive.png" class="w-full h-full object-contain" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <h3 class="font-semibold text-lg line-clamp-2">Executive Room</h3>
+                                    <hr class="bg-[#F1F2F6]">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
+                                            <p class="text-sm text-abu">2 People</p>
+                                        </div>
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
+                                            <p class="text-sm text-abu">221 sqft flat</p>
+                                        </div>
                                     </div>
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                        <p class="text-sm text-abu">221 sqft flat</p>
+                                    <hr class="bg-[#F1F2F6]">
+                                    <div class="flex items-center">
+                                        <p class="text-orange font-semibold">Rp 2.793.444</p>
+                                        <p class="text-abu text-sm">/bulan</p>
                                     </div>
                                 </div>
-                                <hr class="bg-[#F1F2F6]">
-                                <div class="flex items-center">
-                                    <p class="text-orange font-semibold">Rp 2.793.444</p>
-                                    <p class="text-abu text-sm">/bulan</p>
-                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </label>
 
-                    <!-- Card 3 - President -->
-                    <a href="#">
-                        <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
-                            <div class="flex min-w-[148px] h-[188px] overflow-hidden">
-                                <img src="assets/images/room/president.png" class="w-full h-full object-contain" alt="thumbnail">
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h3 class="font-semibold text-lg line-clamp-2">President Room</h3>
-                                <hr>
-                                <div class="flex flex-col gap-3">
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
-                                        <p class="text-sm text-abu">4 People</p>
+                        <!-- Card 3 - President -->
+                        <label>
+                            <input type="radio" name="room" value="president" class="hidden">
+                            <div class="flex items-center w-full rounded-[30px] p-4 border gap-4 bg-white hover:border-hijau hover:border transition-all duration-300">
+                                <div class="flex min-w-[148px] h-[188px] overflow-hidden">
+                                    <img src="assets/images/room/president.png" class="w-full h-full object-contain" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <h3 class="font-semibold text-lg line-clamp-2">President Room</h3>
+                                    <hr>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="assets/images/icon/profile-2user.svg" class="w-5 h-5" alt="icon">
+                                            <p class="text-sm text-abu">4 People</p>
+                                        </div>
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
+                                            <p class="text-sm text-abu">555 sqft flat</p>
+                                        </div>
                                     </div>
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="assets/images/icon/location.svg" class="w-5 h-5" alt="icon">
-                                        <p class="text-sm text-abu">555 sqft flat</p>
+                                    <hr>
+                                    <div class="flex items-center">
+                                        <p class="text-orange font-semibold">Rp 4.793.444</p>
+                                        <p class="text-abu text-sm">/bulan</p>
                                     </div>
                                 </div>
-                                <hr>
-                                <div class="flex items-center">
-                                    <p class="text-orange font-semibold">Rp 4.793.444</p>
-                                    <p class="text-abu text-sm">/bulan</p>
-                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </label>
 
-                </div>
-            </section>
+                    </div>
+                </section>
+                <button type="submit" class="mt-4 bg-hijau text-white py-2 px-4 rounded">Submit</button>
+            </form>
+
         </div>
 
         <div id="continue-button" class="fixed bottom-0 w-full max-w-[640px] mb-5 px-5 mx-auto">

@@ -2,3 +2,7 @@ body {
     color: #070707;
     background-color: #dae1e9;
 }
+
+label:has(input:checked) div {
+    border-color: #91bf77;
+}
