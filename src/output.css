@@ -668,12 +668,12 @@ html {
   height: 1.25rem;
 }
 
-.h-\[164px\] {
-  height: 164px;
+.h-\[132px\] {
+  height: 132px;
 }
 
-.h-\[188px\] {
-  height: 188px;
+.h-\[156px\] {
+  height: 156px;
 }
 
 .h-\[239px\] {
@@ -692,8 +692,8 @@ html {
   height: 100vh;
 }
 
-.max-h-\[50px\] {
-  max-height: 50px;
+.min-h-\[56px\] {
+  min-height: 56px;
 }
 
 .min-h-screen {
@@ -726,8 +726,12 @@ html {
   width: 100%;
 }
 
-.min-w-\[148px\] {
-  min-width: 148px;
+.w-\[120px\] {
+  width: 120px;
+}
+
+.max-w-\[120px\] {
+  max-width: 120px;
 }
 
 .max-w-\[640px\] {
